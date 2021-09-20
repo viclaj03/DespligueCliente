@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <meta name="author" content="Victor Lajara">
+    <meta name="Keywords" content="HTML5">
+</head>
+
+<body>
+    <header>
+        <h1>Formulario</h1>
+        <h2>subtitulo del Formulario</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">portada</a></li>
+            <li><a href="#">Formulario</a></li>
+            <li><a href="#">Informacion</a></li>
+        </ul>
+    </nav>
+    <form action="verForm.php" method="post" enctype="text/plain">
+        <label for="fname">nombre:</label><br>
+        <input required type="text" id="fname" name="fname"><br>
+        <label for="lname">Apellido</label><br>
+        <input required type="text" id="lname" name="lname"><br>
+        <label for="correo">Email</label><br>
+        <input required type="email" id="correo" name="lname"><br>
+        <label for="nacimiento">Nacimeinto</label><br>
+        <input required type="date" id="nacimiento" name="nacimiento"><br>
+        <p>Sexo</p><br>
+        <input type="radio" id="sex1" name="sexo" value="Hombre">
+        <label for="sex1">Hombre</label><br>
+        <input type="radio" id="age2" name="sexo" value="Mujer">
+        <label for="age2">Mujer</label><br>  
+        <input type="radio" id="age3" name="sexo" value="otro">
+        <label for="age3">otro</label><br>
+        <label for="ciclo">Ciclo que estudias:</label>
+        <select name="ciclo" id="ciclo">
+            <option value="DAW">DAW</option>
+            <option value="DAM">DAM</option>
+            <option value="ASIX">ASIX</option>
+        </select>
+        <br>
+        <p>Que frameworks conoces</p>
+        <input type="checkbox" id="frameworks1" name="frameworks1" value="Angular">
+        <label for="frameworks1">Angular</label><br>
+        <input type="checkbox" id="frameworks2" name="frameworks2" value="Vue">
+        <label for="frameworks2">Vue</label><br>
+        <input type="checkbox" id="frameworks3" name="frameworks3" value="Simfony">
+        <label for="frameworks3">Simfony</label><br>
+        <input type="checkbox" id="frameworks4" name="frameworks4" value="Laravel">
+        <label for="frameworks4">Laravel</label><br>
+        <input type="checkbox" id="frameworks5" name="frameworks5" value="Laravel">
+        <label for="frameworks4">Laravel</label><br><br>
+        <input required type="checkbox" id="codiciones" name="codiciones" value="aceptada">
+        <label  for="codiciones">Acepta las condiciones del servicio y nuestra política de privacidads</label><br>
+        <input  type="submit" name="Enviar" value="Enviar">
+    </form>
+</body>
