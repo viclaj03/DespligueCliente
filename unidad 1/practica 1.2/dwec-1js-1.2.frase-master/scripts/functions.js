@@ -37,10 +37,11 @@ function palabrasReves(cadena) {
 }
 
 function palindromo(cadena) {
-	let palabras = cadena.split("")
-	return palabras.reverse() === palabras? "Sí es un palíndromo" : "No es un palíndromo"
+	let palabras = cadena.split(" ").join("").toLowerCase();
+	let palabraReverse = palabras.split("").reverse().join("").toLowerCase();
+	return palabras === palabraReverse;
 
-}
+} 
 
 
 
