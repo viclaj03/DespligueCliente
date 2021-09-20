@@ -37,6 +37,8 @@ function palabrasReves(cadena) {
 }
 
 function palindromo(cadena) {
+	let palabras = cadena.split("")
+	return palabras.reverse() === palabras? "Sí es un palíndromo" : "No es un palíndromo"
 
 }
 
