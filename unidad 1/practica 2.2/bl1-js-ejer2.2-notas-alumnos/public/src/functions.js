@@ -7,7 +7,6 @@ function buscaAlumno(array,alumno) {
 
 function modulosAprobadosDelAlumno(notas) {
 	let modulosAprobados = notas.filter(item => item.nota >= 5)
-
 	return modulosAprobados.map(nombre => nombre.modulo)
 }
 
@@ -15,7 +14,6 @@ function media(notas) {
 	let notaMedia  = notas.reduce((total,nota)=> total += nota)
 	notaMedia = notaMedia/notas.length
 	return notaMedia.toFixed(2)
-	  
 }
 
 function ordenaAlumnosPorNia(array) {
@@ -26,7 +24,6 @@ function ordenaAlumnosPorNia(array) {
 function ordenaAlumnosPorApellido(array) {
 	let alumnosOrdenados = array.sort((alumno1, alumno2) => alumno1.alumno.apellido.localeCompare(alumno2.alumno.apellido) )
 	return alumnosOrdenados.map(item2 => item2.alumno.nombre + " " + item2.alumno.apellido);
-
 }
 
 function alumnosConSuspensos(array) {
